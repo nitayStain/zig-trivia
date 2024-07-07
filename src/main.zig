@@ -4,6 +4,6 @@ const Server = @import("server.zig");
 pub var server: Server = undefined;
 
 pub fn main() !void {
-    try Server.init();
+    try server.init(12565);
     std.debug.print("Hello, world!\n", .{});
 }
